@@ -1,3 +1,8 @@
-# All pull requests need to be reviewed by the following.
+# Code owners file.
+# This file controls who is tagged for review for any given pull request.
 #
-*     @github-linguist/haydenbspence
+# For syntax see:
+# https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners#codeowners-syntax
+#
+# default owners for changes in this repo
+*     @haydenbspence
