@@ -1,0 +1,14 @@
+{
+    "image": "mcr.microsoft.com/vscode/devcontainers/python:3.11",
+    "updateContentCommand": ".devcontainer/updateContent.sh",
+    "customizations": {
+      "vscode": {
+        "extensions": ["ms-toolsai.jupyter", "ms-python.python"]
+      }
+    },
+    "features": {
+      "ghcr.io/eitsupi/devcontainer-features/duckdb-cli:1": {
+        "extensions": "httpfs,sqlite,postgres,spatial,substrait,parquet,json,arrow,mysql"
+      }
+    }
+  }
