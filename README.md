@@ -10,13 +10,21 @@ Hestia is an implementation of the OpenAPI standard to the OMOP CDM and OHDSI to
 - Unified API
 - API Documentation digestable by GPTs and other generative models.
 
-### Efficient Data Storage
 
 ## Design
 
-### Related
 
 ## Installation
+
+```bash
+pip install ...
+```
+
+```bash
+conda install ...
+```
+
+## Usage
 
 ## Documentation
 
@@ -36,5 +44,9 @@ Pre-alpha
 
 ## Contributing
 
+- Please read our [CONTRIBUTING.md](.github/CONTRIBUTING.md) document.
+
+- We use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/) to assist with change log automation, please use this style as much as possible.
+
 ## License
-HADES is licensed under [Apache License 2.0](./LICENSE)
+Hestia is licensed under [Apache License 2.0](./LICENSE)

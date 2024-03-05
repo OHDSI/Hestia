@@ -38,6 +38,8 @@ Improving documentation, tutorials, or examples is a valuable way to contribute.
 
 ## Setting Up Your Development Environment
 
+A devcontainter.json is included for VSCode / Docker users. This is the easiest way to get started on a local machine.
+
 ## Community
 Please [Introduce Yourself](https://forums.ohdsi.org/t/welcome-to-ohdsi-please-introduce-yourself/704/932) and join the community! [Join the OHDSI community forums](https://forums.ohdsi.org/) and to discuss with other contributors and the OHDSI team. This is a great place to ask questions, propose ideas, and connect with the community.
 
