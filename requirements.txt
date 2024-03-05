@@ -1,0 +1,10 @@
+jupyter
+pydantic
+fastapi
+fastui
+uvicorn[standard]
+linkml
+duckdb
+ibis-framework[duckdb,examples]
+pandas
+polars

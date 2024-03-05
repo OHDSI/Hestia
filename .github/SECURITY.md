@@ -1,0 +1,1 @@
+To report a security vulnerability to Hestia, please DO NOT post it as a GitHub Issue or othewise public forum. Email fdefalco@ohdsi.org directly.
