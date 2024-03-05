@@ -1,14 +1,33 @@
 {
+    "name": "Python 3.11 & Jupyter with Ruff",
     "image": "mcr.microsoft.com/vscode/devcontainers/python:3.11",
-    "updateContentCommand": ".devcontainer/updateContent.sh",
-    "customizations": {
-      "vscode": {
-        "extensions": ["ms-toolsai.jupyter", "ms-python.python"]
-      }
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "python.pythonPath": "/usr/local/bin/python",
+        "python.linting.enabled": true,
+        // Disable other linters to ensure ruff is the primary linter
+        "python.linting.pylintEnabled": false,
+        "python.linting.flake8Enabled": false,
+        // Configure ruff settings
+        "python.linting.ruffEnabled": true,
+        "python.linting.ruffPath": "/usr/local/bin/ruff",
+        "python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
+        "python.formatting.blackPath": "/usr/local/py-utils/bin/black",
+        "python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
+        "python.sortImports.path": "/usr/local/py-utils/bin/isort",
+        "[python]": {
+            "editor.codeActionsOnSave": {
+                "source.organizeImports": true
+            }
+        }
     },
-    "features": {
-      "ghcr.io/eitsupi/devcontainer-features/duckdb-cli:1": {
-        "extensions": "httpfs,sqlite,postgres,spatial,substrait,parquet,json,arrow,mysql"
-      }
-    }
-  }
+    "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "charliermarsh.ruff"
+    ],
+    "forwardPorts": [8888],
+    "postCreateCommand": "pip install -r requirements.txt && pip install ruff",
+    "remoteUser": "vscode"
+}
