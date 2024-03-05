@@ -9,7 +9,7 @@ Hestia is an implementation of the OpenAPI standard to the OMOP CDM and OHDSI to
 - The OMOP CDM Schema in LinkML.
     - Easily transform the OMOP CDM into other frameworks, artefacts, and documentation.
 - Offloading SQL translation and connectors to [Ibis](https://github.com/ibis-project/ibis)
-- Composible API for OHDSI tooling using [OpenAPI v3.1.0](https://spec.openapis.org/oas/latest.html) standards.
+- Composable API for OHDSI tooling using [OpenAPI v3.1.0](https://spec.openapis.org/oas/latest.html) standards.
 - Decoupling of backend and frontend using [FastAPI](https://github.com/tiangolo/fastapi) and [FastUI](https://github.com/pydantic/FastUI).
 - Human and Machine (e.g. [GPT with Actions](https://platform.openai.com/docs/actions/introduction)) readable API Documentation.
 
