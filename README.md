@@ -21,6 +21,7 @@ Hestia is an implementation of the OpenAPI standard to the OMOP CDM and OHDSI to
 ## Documentation
 
 [LinkLM Documentation](https://linkml.io/linkml/)
+
 [OpenAPI Documentation](https://spec.openapis.org/oas/latest.html)
 
 ## Support
