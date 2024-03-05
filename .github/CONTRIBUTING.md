@@ -3,7 +3,7 @@
 We welcome contributions to HESTIA! Whether you're interested in fixing bugs, adding new features, or helping with documentation, your contributions are greatly appreciated.
 
 ## Code of Conduct
-This project and everyone participating in it is governed by the project's [Code of Conduct](). By participating, you are expected to uphold this code.
+This project and everyone participating in it is governed by OHDSI's [Community Guidelines](https://forums.ohdsi.org/faq). By participating, you are expected to adhere to these guidelines.
 
 ## How to Contribute
 There are many ways to contribute to the OHDSI project, and we value all forms of contributions. Here are some ways you can help:
