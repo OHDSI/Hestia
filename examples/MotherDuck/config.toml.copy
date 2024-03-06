@@ -1,0 +1,14 @@
+[broadsea_postgresql]
+
+POSTGRES_USER = ''
+POSTGRES_PASSWORD = ''
+POSTGRES_DB = ''
+POSTGRES_SCHEMA = ''
+POSTGRES_HOST = ''
+POSTGRES_PORT = ''
+
+
+[mother-duck]
+
+MD_SERVICE_TOKEN = ''
+MD_SHARED_DB = ''
