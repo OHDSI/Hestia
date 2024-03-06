@@ -19,13 +19,27 @@ Hestia is an implementation of the OpenAPI standard to the OMOP CDM and OHDSI to
 
 ## Installation
 
+### 1. Install Micromamba
+
+Choose the method appropriate for your system from [Micromamba Installation](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html). Then test the installation by running the following in your terminal.
+
 ```bash
-pip install ...
+micromamba self-update
+```
+
+You may also use other implementations of conda like Anaconda or Miniconda.
+
+### 2. Create and Activate Environment
+
+```bash
+micromamba create -f env.yml --prefix ./.env
 ```
 
 ```bash
-conda install ...
+micromamba activate hestia
 ```
+
+
 
 ## Usage
 

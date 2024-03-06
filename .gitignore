@@ -1,5 +1,7 @@
 
 .ruff_cache
+*config.toml
+data/external/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
