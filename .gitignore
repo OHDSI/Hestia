@@ -1,6 +1,9 @@
 
 .ruff_cache
 *config.toml
+*.gguf
+*.ddb
+*.ddb.wal
 data/external/
 
 # Byte-compiled / optimized / DLL files
