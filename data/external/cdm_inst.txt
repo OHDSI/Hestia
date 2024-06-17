@@ -1,1 +1,0 @@
-https://github.com/OHDSI/CommonDataModel/releases/download/v5.4.1/OMOPCDM_5.4.zip
