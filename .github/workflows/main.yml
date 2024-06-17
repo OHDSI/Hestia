@@ -18,7 +18,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install duckdb  # Install the duckdb package
+        pip install duckdb==1.0.0
 
     - name: Run MotherDuck Test
       env:

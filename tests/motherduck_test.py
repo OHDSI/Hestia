@@ -8,7 +8,8 @@ if not motherduck_token:
     raise ValueError("MOTHERDUCK_TOKEN is not set in the environment variables.")
 
 # Create a connection to MotherDuck
-conn = duckdb.connect(database=':memory:', access_mode='read_write', config={"access_token": motherduck_token})
+conn = duckdb.connect
+conn = duckdb.connect(f'md:?motherduck_token={motherduck_token}')
 
 # Create a test table
 conn.execute("CREATE TABLE test_table (id INTEGER, name VARCHAR)")
