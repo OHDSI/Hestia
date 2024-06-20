@@ -13,7 +13,7 @@ conn = duckdb.connect(f'md:?motherduck_token={motherduck_token}')
 
 # Create a test table
 conn.execute("""
-    USE main;
+    USE test;
     DROP TABLE IF EXISTS test_table;
     CREATE TABLE test_table (id INTEGER, name VARCHAR);
     INSERT INTO test_table VALUES (1, 'Alice'), (2, 'Bob');
