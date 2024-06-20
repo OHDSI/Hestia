@@ -4,7 +4,6 @@ fastapi
 fastui
 uvicorn[standard]
 linkml
-duckdb
-ibis-framework[duckdb,examples]
+duckdb==1.0.0
 pandas
 polars
