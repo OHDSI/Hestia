@@ -14,8 +14,8 @@ conn = duckdb.connect(f'md:test_db?motherduck_token={motherduck_token}')
 # Create a test table
 conn.execute("""
     DROP TABLE IF EXISTS test_tbl;
-    CREATE TABLE test_tbl (id INTEGER, name VARCHAR);
-    INSERT INTO test_tbl VALUES (1, 'Alice'), (2, 'Bob');
+    CREATE TABLE test_tbl (id INTEGER, test_title, test_description VARCHAR);
+    INSERT INTO test_tbl VALUES (1, 'Insert Test', 'Test inserting data into a table');
              """)
 
 # Query the table
