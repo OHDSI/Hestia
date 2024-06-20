@@ -9,7 +9,7 @@ if not motherduck_token:
 
 # Create a connection to MotherDuck
 conn = duckdb.connect
-conn = duckdb.connect(f'md:?motherduck_token={motherduck_token}')
+conn = duckdb.connect(f'md:test_db?motherduck_token={motherduck_token}')
 
 # Create a test table
 conn.execute("""
