@@ -17,6 +17,21 @@ Hestia is an implementation of the OpenAPI standard to the OMOP CDM and OHDSI to
 ## Design
 
 
+## Technology
+
+| Name | Licence |
+|------|---------|
+| [FastAPI](https://fastapi.tiangolo.com/) | MIT |
+| [Ibis](https://ibis-project.org/) | Apache License 2.0 |
+| [Pydantic](https://docs.pydantic.dev/latest/) | MIT |
+| [Duckdb](https://github.com/duckdb/duckdb) | MIT |
+| [Pytest](https://github.com/pytest-dev/pytest) | MIT |
+| [Ruff](https://github.com/astral-sh/ruff) | MIT |
+| [Docker Engine](https://docs.docker.com/engine/) | Apache License 2.0 |
+| [FastUI](https://github.com/pydantic/FastUI) | MIT|
+
+
+
 ## Installation
 
 ```bash
@@ -49,7 +64,11 @@ Pre-alpha
 
 - Please read our [CONTRIBUTING.md](.github/CONTRIBUTING.md) document.
 
-- We use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/) to assist with change log automation, please use this style as much as possible.
+
+## References
+
+- [zhanymkanov/fastapi-best-practices](https://github.com/zhanymkanov/fastapi-best-practices?tab=readme-ov-file#project-structure)
+- [tiangolo/full-stack-fastapi-template](https://github.com/tiangolo/full-stack-fastapi-template)
 
 ## License
 Hestia is licensed under [Apache License 2.0](./LICENSE)

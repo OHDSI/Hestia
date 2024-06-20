@@ -1,0 +1,9 @@
+jupyter
+pydantic
+fastapi
+fastui
+uvicorn[standard]
+linkml
+duckdb==1.0.0
+pandas
+polars

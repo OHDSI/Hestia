@@ -8,19 +8,21 @@ if not motherduck_token:
     raise ValueError("MOTHERDUCK_TOKEN is not set in the environment variables.")
 
 # Create a connection to MotherDuck
-conn = duckdb.connect(database=':memory:', access_mode='read_write', config={"access_token": motherduck_token})
+conn = duckdb.connect
+conn = duckdb.connect(f'md:test_db?motherduck_token={motherduck_token}')
 
 # Create a test table
-conn.execute("CREATE TABLE test_table (id INTEGER, name VARCHAR)")
-
-# Insert data into the table
-conn.execute("INSERT INTO test_table VALUES (1, 'Alice'), (2, 'Bob')")
+conn.execute("""
+    DROP TABLE IF EXISTS test_tbl;
+    CREATE TABLE test_tbl (id INTEGER, test_title VARCHAR, test_description VARCHAR);
+    INSERT INTO test_tbl VALUES (1, 'Insert Test', 'Test inserting data into a table');
+             """)
 
 # Query the table
-result = conn.execute("SELECT * FROM test_table").fetchall()
+result = conn.execute("SELECT * FROM test_tbl").fetchall()
 
 # Check the results
-if result == [(1, 'Alice'), (2, 'Bob')]:
+if result == [(1, 'Insert Test', 'Test inserting data into a table')]:
     print("Test Passed: Data matches expected results")
 else:
     raise Exception("Test Failed: Data does not match expected results")
