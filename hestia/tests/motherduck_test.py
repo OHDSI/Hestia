@@ -12,6 +12,7 @@ conn = duckdb.connect
 conn = duckdb.connect(f'md:?motherduck_token={motherduck_token}')
 
 # Create a test table
+conn.execute("USE main;")
 conn.execute("DROP TABLE IF EXISTS test_table")
 conn.execute("CREATE TABLE test_table (id INTEGER, name VARCHAR)")
 
