@@ -13,14 +13,13 @@ conn = duckdb.connect(f'md:?motherduck_token={motherduck_token}')
 
 # Create a test table
 conn.execute("""
-    USE test;
-    DROP TABLE IF EXISTS test_table;
-    CREATE TABLE test_table (id INTEGER, name VARCHAR);
-    INSERT INTO test_table VALUES (1, 'Alice'), (2, 'Bob');
+    DROP TABLE IF EXISTS test_tbl;
+    CREATE TABLE test_tbl (id INTEGER, name VARCHAR);
+    INSERT INTO test_tbl VALUES (1, 'Alice'), (2, 'Bob');
              """)
 
 # Query the table
-result = conn.execute("SELECT * FROM test_table").fetchall()
+result = conn.execute("SELECT * FROM test_tbl").fetchall()
 
 # Check the results
 if result == [(1, 'Alice'), (2, 'Bob')]:
