@@ -12,12 +12,12 @@ conn = duckdb.connect
 conn = duckdb.connect(f'md:?motherduck_token={motherduck_token}')
 
 # Create a test table
-conn.execute("USE main;")
-conn.execute("DROP TABLE IF EXISTS test_table")
-conn.execute("CREATE TABLE test_table (id INTEGER, name VARCHAR)")
-
-# Insert data into the table
-conn.execute("INSERT INTO test_table VALUES (1, 'Alice'), (2, 'Bob')")
+conn.execute("""
+    USE main;
+    DROP TABLE IF EXISTS test_table;
+    CREATE TABLE test_table (id INTEGER, name VARCHAR);
+    INSERT INTO test_table VALUES (1, 'Alice'), (2, 'Bob');
+             """)
 
 # Query the table
 result = conn.execute("SELECT * FROM test_table").fetchall()
