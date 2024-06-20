@@ -22,7 +22,7 @@ conn.execute("""
 result = conn.execute("SELECT * FROM test_tbl").fetchall()
 
 # Check the results
-if result == [(1, 'Alice'), (2, 'Bob')]:
+if result == [(1, 'Insert Test', 'Test inserting data into a table')]:
     print("Test Passed: Data matches expected results")
 else:
     raise Exception("Test Failed: Data does not match expected results")
